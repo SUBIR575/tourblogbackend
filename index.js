@@ -9,7 +9,7 @@ import swaggerUi from "swagger-ui-express";
 import bodyParser from "body-parser";
 import swaggerFile from "./Swagger_Output.json" assert { type: "json" };
 dotenv.config();
-const port = 5000;
+const port = process.env.PORT || 5000;
 
 const app = express();
 app.use(morgan("dev"));
