@@ -1,0 +1,30 @@
+{
+  "name": "tour",
+  "version": "1.0.0",
+  "description": "this is simple tour blog web app.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "swagger-autogen": "node swagger.js"
+  },
+  "author": "subir pal",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.6.5",
+    "morgan": "^1.10.0",
+    "swagger-autogen": "^2.22.0",
+    "swagger-ui-express": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
