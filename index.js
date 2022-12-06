@@ -7,7 +7,7 @@ import userRouter from "./routes/user.js";
 import tourRouter from "./routes/tour.js";
 import swaggerUi from "swagger-ui-express";
 import bodyParser from "body-parser";
-import swaggerFile from "./Swagger_Output.json" assert { type: "json" };
+// import swaggerFile from "./Swagger_Output.json" assert { type: "json" };
 dotenv.config();
 const port = process.env.PORT || 5000 ;
 
@@ -28,7 +28,7 @@ app.use(
 );
 app.use("/users", userRouter);
 app.use("/tour", tourRouter);
-app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerFile));
+// app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerFile));
 
 mongoose
   .connect(MONGODB_URL)
