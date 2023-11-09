@@ -2,7 +2,7 @@ import express from "express";
 import morgan from "morgan";
 import mongoose from "mongoose";
 import cors from "cors";
-import * as dotenv from "dotenv";
+import dotenv from "dotenv";
 import userRouter from "./routes/user.js";
 import tourRouter from "./routes/tour.js";
 import swaggerUi from "swagger-ui-express";
